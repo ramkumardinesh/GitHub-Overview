@@ -5,7 +5,7 @@ on:
  
 jobs:
  firstJob:
-  runs_on: self-hosted
+  runs_on: ubuntu_latest
    steps:
     - name: firstScript
       shell: bash
