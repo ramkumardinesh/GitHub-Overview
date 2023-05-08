@@ -4,18 +4,18 @@ on:
  workflow_dispatch:
  
 jobs:
- firstJob:
-  runs_on: ubuntu_latest
-   steps:
+ firstjob:
+  runs-on: ubuntu_latest
+  steps:
     - name: firstScript
       shell: bash
       run: echo Hello world Git Actions
     - name: secondScript
       shell: bash
       run: echo second Script
- secondJob:
-  runs_on: ubuntu_latest
-   steps:
+ secondjob:
+  runs-on: ubuntu_latest
+  steps:
     - name: firstScript
       shell: bash
       run: |
