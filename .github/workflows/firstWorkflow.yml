@@ -1,24 +1,24 @@
 name: first_workflow
 
 on:
- workflow_dispatch
+ workflow_dispatch:
  
 jobs:
  firstJob:
-  runs_on: self_dispatch
-  steps:
-   - name: firstScript
-     shell: bash
-     run: echo Hello world Git Actions
-   - name: secondScript
-     shell: bash
-     run: echo second Script
+  runs_on: self-hosted
+   steps:
+    - name: firstScript
+      shell: bash
+      run: echo Hello world Git Actions
+    - name: secondScript
+      shell: bash
+      run: echo second Script
  secondJob:
   runs_on: ubuntu_latest
-  steps:
-   - name: firstScript
-     shell: bash
-     run: |
-      echo Hello Second Job
-      echo Hello Multi Line
+   steps:
+    - name: firstScript
+      shell: bash
+      run: |
+       echo Hello Second Job
+       echo Hello Multi Line
      
